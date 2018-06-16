@@ -31,7 +31,7 @@ PrintScreen::
 	Run SnippingTool.exe
 Return
 
-; Close window by left alt + tilda
+; Close window by win key + tilda
 #`::
 	WinClose, A
 Return
