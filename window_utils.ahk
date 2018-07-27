@@ -1,5 +1,7 @@
 #NoTrayIcon
 
+SetNumLockState, On
+
 ; Minimize window
 #down::
 	WinMinimize, A
@@ -35,3 +37,11 @@ Return
 #`::
 	WinClose, A
 Return
+
+NumpadDot::.
+
+NumLock::
+	Send {BackSpace}
+Return
+
+
