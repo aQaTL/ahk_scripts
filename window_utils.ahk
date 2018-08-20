@@ -24,7 +24,7 @@ Return
 Return
 
 ; Always on top 
-#^enter:: 
+#!enter:: 
 	Winset, Alwaysontop, , A
 Return
 
@@ -44,4 +44,14 @@ NumLock::
 	Send {BackSpace}
 Return
 
+SwitchWindowTitleBar() {
+	static titleBar := true
+	if (titleBar) {
+		WinSet, Style, -0xC00000, A
+	} else {
+		WinSet, Style, +0xC00000, A
+	}
+	titleBar := !titleBar
+}
 
+#!\::SwitchWindowTitleBar()
