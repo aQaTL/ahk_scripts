@@ -9,6 +9,9 @@ Return
 #del::
 	WinMinimize, A
 Return
+!`::
+	WinMinimize, A
+Return
 
 ; Toggle maximize window
 #enter::
@@ -55,3 +58,7 @@ SwitchWindowTitleBar() {
 }
 
 #!\::SwitchWindowTitleBar()
+
++Space::
+	Send _
+Return
