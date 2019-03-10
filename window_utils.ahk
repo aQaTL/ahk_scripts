@@ -59,6 +59,3 @@ SwitchWindowTitleBar() {
 
 #!\::SwitchWindowTitleBar()
 
-+Space::
-	Send _
-Return
