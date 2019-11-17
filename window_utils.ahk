@@ -37,7 +37,7 @@ PrintScreen::
 Return
 
 ; Close window by win key + tilda
-#`::
+#ESC::
 	WinClose, A
 Return
 
