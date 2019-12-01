@@ -59,3 +59,13 @@ SwitchWindowTitleBar() {
 
 #!\::SwitchWindowTitleBar()
 
+; Next desktop
+!F1::
+	SendInput #^{Left}
+	Return
+
+; Previous desktop 
+!F2:: 
+	SendInput #^{Right}
+	Return
+
