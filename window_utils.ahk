@@ -1,7 +1,5 @@
 #NoTrayIcon
 
-SetNumLockState, On
-
 ; Minimize window
 #down::
 	WinMinimize, A
@@ -31,20 +29,9 @@ Return
 	Winset, Alwaysontop, , A
 Return
 
-; Map PrintScreen key to run snipping tool
-PrintScreen::
-	Run SnippingTool.exe
-Return
-
 ; Close window by win key + tilda
 #ESC::
 	WinClose, A
-Return
-
-NumpadDot::.
-
-NumLock::
-	Send {BackSpace}
 Return
 
 SwitchWindowTitleBar() {
