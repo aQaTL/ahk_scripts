@@ -38,5 +38,6 @@ Return
 
 #IfWinActive ahk_exe doublecmd.exe
 F10::
-	SendInput {AppsKey}{Down 4}{Right}{Down 4}{Enter}
+	SendInput {Shift down}{F2}{Shift up}{Text}un7z.exe `%v
+	SendInput {Enter}
 Return
