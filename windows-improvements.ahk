@@ -89,3 +89,12 @@ Return
 
 AppsKey::Send {AppsKey}
 
+; Launch pssh
+#^s::
+	Run, "C:\Users\mmsol\.cargo\bin\pssh.exe"
+Return
+
+#c::
+	DllCall("User32.dll\LockWorkStation")
+	DllCall("User32.dll\SendMessage", "Ptr", 0xffff, "UInt", 0x0112, "UPtr", 0xF170, "Ptr", 2)
+Return
