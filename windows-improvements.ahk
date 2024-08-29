@@ -98,3 +98,11 @@ Return
 	DllCall("User32.dll\LockWorkStation")
 	DllCall("User32.dll\SendMessage", "Ptr", 0xffff, "UInt", 0x0112, "UPtr", 0xF170, "Ptr", 2)
 Return
+
+^n::
+	SendInput {Down}
+Return
+
+^p::
+	SendInput {Up}
+Return
