@@ -106,3 +106,9 @@ Return
 ^p::
 	SendInput {Up}
 Return
+
+; Launch File Pilot instead of File Explorer
+#e::
+	EnvGet, LocalAppDataPath, LOCALAPPDATA
+	Run, %LocalAppDataPath%\Voidstar\FilePilot\FPilot.exe
+Return
