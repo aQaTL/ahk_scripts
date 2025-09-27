@@ -31,7 +31,7 @@ Return
 ;Return
 
 ; Toggle maximize window
-#enter::
+;;#enter::
 #Up::
 	WinGet, Status, MinMax, A
 	if (Status = 1) {
