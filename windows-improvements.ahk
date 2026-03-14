@@ -9,7 +9,7 @@
 
 Pause::
 	DllCall("User32.dll\LockWorkStation")
-	DllCall("User32.dll\SendMessage", "Ptr", 0xffff, "UInt", 0x0112, "UPtr", 0xF170, "Ptr", 2)
+	; DllCall("User32.dll\SendMessage", "Ptr", 0xffff, "UInt", 0x0112, "UPtr", 0xF170, "Ptr", 2)
 Return
 
 ; Empty recycle bin
@@ -96,7 +96,7 @@ Return
 
 #c::
 	DllCall("User32.dll\LockWorkStation")
-	DllCall("User32.dll\SendMessage", "Ptr", 0xffff, "UInt", 0x0112, "UPtr", 0xF170, "Ptr", 2)
+	; DllCall("User32.dll\SendMessage", "Ptr", 0xffff, "UInt", 0x0112, "UPtr", 0xF170, "Ptr", 2)
 Return
 
 ^n::
